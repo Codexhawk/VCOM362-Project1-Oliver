@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="head">
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <input class="menut" type="checkbox" />
+                  
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <ul id="menu">
+                    <a href="page1.html"><li>Muffins are the Greatest</li></a>
+                    <a href="page2.html"><li>More about Muffins</li></a>
+                    <a href="page3.html"><li>Muffin Time</li></a>
+                </div>
+            </nav>
+			<a href="home.html" class="logo"><img src="Photos/muffin_logo.jpg" class="logo_img"></a>
+			<ul class="nav">
+				<li><a href="page1.html" class="border">Muffins are the Greatest</a></li>
+				<li><a href="page2.html" class="border">More about Muffins</a></li>
+				<li><a href="page3.html" class="border">Muffin Time</a></li>
+			</ul>
+        </div>
+        <h1 class="center big">Muffin Time</h1>
+        <div class="container page_3">
+            <div class="form">
+                <h2 class="subh">You in Muffins!</h2>
+                <form>
+                    <label for="lbs">How much do you weigh? (pounds):</label><br>
+                    <input type="text" id="lbs" name="lbs" onchange="calculatelbs()"><br>
+                    <label for="result_lbs">The amount of muffins you weigh is!</label><br>
+                    <input id="result_lbs"><br>
+                    <br>
+                    <label for="inches">How tall are you? (inches):</label><br>
+                    <input type="text" id="inches" name="inches" onchange="calculatein()"><br>
+                    <label for="result_inches">The amount of muffins tall you are is!</label><br>
+                    <input id="result_inches">
+                </form>
+            </div>
+            <div class="recipie">
+                <h2 class="subh ">Cinamon Muffin Recipie</h2>
+                <p class="text">2 cups all-purpose flour
+                    1 cup sugar<br>
+                    4 teaspoons baking powder<br>
+                    1 tablespoon cinnamon<br>
+                    1/2 teaspoon salt<br>
+                    1 cup milk<br>
+                    1/2 cup vegetable oil<br>
+                    2 eggs<br>
+                    2 tablespoons sugar<br>
+                    1 teaspoon cinnamon</p>
+                <p class="hide text">Preheat the oven to 375ºF. 
+                    Grease 16 muffins cups.
+                    In a bowl, combine the flour, sugar, baking powder, cinnamon and salt.
+                    In another bowl, beat together the milk, vegetable oil, and eggs. 
+                    Make a well in the center of the dry ingredients and add the wet ingredients. Stir just until combined – don’t overmix.
+                    <br><br>
+                    Divide the mixture evenly between the prepared muffin cups.
+                    In a small bowl, combine the 2 tablespoons sugar and 1 teaspoon of cinnamon. Sprinkle the cinnamon sugar mixture over the tops of the batter filled cups.
+                    Bake the muffins until a toothpick inserted in the center comes out clean 
+                    13-15 minutes.</p>
+            </div>
+            <div class="w3-display-container">
+                <img class="mySlides" src="Photos/kid_1.jpg" style="width: 100%" height="384px">
+                <img class="mySlides" src="Photos/kid_2.jpg" style="width: 100%" height="384px">
+                <img class="mySlides" src="Photos/kid_3.jpg" style="width: 100%" height="384px">
+
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+
+            function calculatelbs() {
+                var input = document.getElementById('lbs').value;	
+                var result = document.getElementById('result_lbs');	
+                var myResult = input / .25;
+                result.value = myResult;
+            }
+
+            function calculatein() {
+                var input = document.getElementById('inches').value;	
+                var result = document.getElementById('result_inches');	
+                var myResult = input / 2;
+                result.value = myResult;
+            }
+            </script>
+    </body>
+</html>
