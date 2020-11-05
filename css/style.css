@@ -1,0 +1,367 @@
+body {
+    background-color: #F2DCB1;
+    font-family: 'Piazzolla', serif;
+    color: #151525;
+    /*font-size: 46px;*/
+}
+
+.main-title {
+    font-size: 240px;
+    margin-bottom: -90px;
+    font-weight: 600; /*Semi-Bold*/
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    padding-left: 30%;
+}
+
+
+.right {
+    float: right;
+    justify-content: right;
+}
+
+
+.letter {
+    color: #735D31;
+    font-size: 144px;
+}
+
+.brown {
+    color: #735D31;
+}
+
+.itallic {
+    font-style: italic;
+}
+
+.home {
+    font-size: 46px;
+    font-weight: 200; /* Extra-light*/
+    width: 1047px;
+    float: right;
+    clear: right;
+    margin-top: -40px;
+}
+
+.rotate {
+    transform: rotate(90deg);
+    transform-origin: 15% 22%;
+}
+
+.title {
+    font-size: 220px;
+    font-weight: 600; /*Semi-Bold*/
+}
+
+.design {
+    margin: auto;
+    width: 50%;
+}
+
+.titlelet {
+    font-size: 400px;
+}
+
+.container {
+    position: relative;
+    height: 900px;
+    z-index: -1;
+}
+
+.back1 {
+    margin: 10px;
+    position: absolute;
+    font-size: 300px;
+    opacity: 10%;
+    right: -300px;
+    Top: 60px;
+    z-index: -999;
+    margin: -50px;
+}
+
+.back2 {
+    margin: 10px;
+    position: absolute;
+    font-size: 400px;
+    opacity: 20%;
+    left: -300px;
+    Top: -330px;
+    z-index: -999;
+}
+
+.back3 {
+    margin: 10px;
+    position: absolute;
+    font-size: 500px;
+    opacity: 30%;
+    left: -700px;
+    Top: 100px;
+    z-index: -999;
+}
+
+.center {
+    text-align: center;
+}
+
+.story {
+    font-size: 72px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.pooh {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  /*  width: 50%;*/
+    border-radius: 70px;
+}
+
+.story-text {
+    width: 1002px;
+    margin: auto;
+}
+
+.pooh-quote {
+    font-size: 48px;
+}
+
+.book-quote {
+    font-size: 36px;
+    text-indent: 20px;
+    margin-top: -10px;
+}
+
+.history {
+    margin-top: -0px;
+    margin-bottom: 50px;
+}
+
+@keyframes slide {
+    from{right: 1500px;}
+    to{right: 0px;}
+}
+
+.dates {
+    width: auto;
+    position: relative;
+    font-size: 36px;
+    opacity: 30%;
+    overflow: hidden;
+    animation-name: slide;
+    animation-duration: 10s;
+    
+}
+
+.his-contain {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.his-para {
+    font-size: 46px;
+    width: 640px;
+}
+.paralet {
+    font-size: 136px;
+}
+.astor {
+    width: 510px;
+    border-radius: 70px;
+}
+.logo {
+    width: 609px;
+    height: 83px;
+    transform: rotate(90deg);
+    transform-origin: 20% 190%;
+}
+
+.contain {
+    width: 100%;
+    height: 100%;
+    top: -700px;
+}
+
+.back {
+    z-index: -20;
+}
+
+.big {
+    z-index: -999;
+    Font-size: 5000px;
+    opacity: 20%;
+    position: absolute;
+    margin: 0px;
+    padding: -500px;
+    left: -1700px;
+    top: -1200px;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    top: -500px;
+}
+
+.list {
+    list-style-type: none;
+    transform: rotate(-90deg);
+    transform-origin: 30% -10%;
+    z-index: -20;
+}
+
+.skew {
+    font-size: 48px;
+    margin-top: 70px;
+    transform: rotate(45deg);
+}
+
+.s-title {
+    font-size: 48px;
+    transform: rotate(90deg);
+    margin-right: 100px;
+    margin-left: -60px;
+}
+
+@keyframes appear {
+    from{opacity: 0%;}
+    to{opacity: 100%}
+}
+
+.blk {
+    font-weight: 900;
+}
+.exb {
+    font-weight: 800;
+} 
+.bld {
+    font-weight: 700;
+}
+.smb {
+    font-weight: 600;
+}
+.med {
+    font-weight: 500;
+}
+.reg {
+    font-weight: 400;
+}
+.lit {
+    font-weight: 300;
+}
+.exl {
+    font-weight: 200;
+}
+
+@keyframes move {
+    from{left: -20px;}
+    to{left: 0px;}
+
+}
+
+.s-blk {
+    font-weight: 900;
+    font-size: 36px;
+    opacity: 0%;
+    display: flex;
+    flex-direction: row;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.s-exb {
+    font-weight: 800;
+    font-size: 36px;
+    opacity: 0%;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+} 
+.s-bld {
+    font-weight: 700;
+    font-size: 36px;
+    opacity: 0%;
+    display: flex;
+    flex-direction: row;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+.s-smb {
+    font-weight: 600;
+    font-size: 36px;
+    opacity: 0%;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+.s-med {
+    font-weight: 500;
+    font-size: 36px;
+    opacity: 0%;
+    display: flex;
+    flex-direction: row;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+.s-reg {
+    font-weight: 400;
+    font-size: 36px;
+    opacity: 0%;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+}
+.s-lit {
+    font-weight: 300;
+    font-size: 36px;
+    opacity: 0%;
+    display: flex;
+    flex-direction: row;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+.s-exl {
+    font-weight: 200;
+    font-size: 36px;
+    opacity: 0%;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 5.5s;
+    animation-fill-mode: forwards;
+}
