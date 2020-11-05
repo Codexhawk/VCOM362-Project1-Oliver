@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <style>
+            #div1 {
+              width: 127px;
+              height: 350px;
+              margin-top: 100px;
+              border: 1px black;
+              z-index: 30;
+            }
+            
+            .dragger {
+                width: 127;
+                margin-top: -120px !important;
+                float: left;
+                clear: left;
+                z-index: 31;
+            }
+        </style>
+        <script>
+            function allowDrop(ev) {
+            ev.preventDefault();
+            }
+            
+            function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+            }
+            
+            function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
+    </head>
+    <body>
+        <div class="nav">
+            <div id="drag1" class="dragger" draggable="true" ondragstart="drag(event)">
+                <a class="link" href="index.html">Home</a>
+                <a class="link" href="page2.html">Design</a>
+                <a class="link" href="page3.html">History</a>
+                <a class="link" href="page4.html">Styles</a>
+                <br>
+                <img id="drag1" class="dragger" src="Photos/bookmark.png" draggable="true" ondragstart="drag(event)" width="127">
+            </div>
+            <br>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="container">
+            <h1 class="title design"><span class="titlelet">D</span>esign</h1>
+            <p class="back1">Design</p>
+            <p class="back2">Design</p>
+            <p class="back3">Design</p>
+        </div>
+        <h2 class="center story">Storybook Styling</h2>
+        <img class="pooh"src="Photos/winne.jpg" width="1003px">
+        <div class="story-text">
+            <p class="itallic pooh-quote">“Sometimes the smallest things take up the most room in your heart.”  <em>~Winnie the Pooh~</em></p>
+            <p class="book-quote">“If you live to be a hundred, I want to live to be a hundred minus one day so I never have to live without you.”</p>
+            <p class="book-quote">Piglet sidled up to Pooh from behind. “Pooh?” he whispered.</p>
+            <p class="book-quote">“Yes, Piglet?”</p>
+            <p class="book-quote">Nothing,” said Piglet, taking Pooh’s hand. “I just wanted to be sure of you.”</p>
+            <p class="book-quote">We’ll be Friends Forever, won’t we, Pooh?’ asked Piglet.</p> 
+            <p class="book-quote">“Even longer,” Pooh answered.</p>
+            <p class="book-quote">“If ever there is tomorrow when we’re not together… there is something you must always
+                remember. You are braver than you believe, stronger than you seem, and smarter than
+                you think. But the most important thing is, even if we’re apart… I’ll always be with
+                you.”</p>
+        </div>
+    </body>
+</html>
