@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="content">
+            <div class="logo">
+                <img class="move1" src="Photos/logo-3.png">
+                <img class="move2" src="Photos/logo-2.png">
+                <img class="move3" src="Photos/logo-1.png">
+            </div>
+            <img class="top-img" src="Photos/title_img.jpg">
+            <div class="nav sticky">
+                <div class="nav-holder">
+                    <img class="button" src="Photos/hero.png">
+                    <p class="link"><a href="index.html">Home</a></p>
+                </div>
+                <div class="nav-holder">
+                    <img class="button" src="Photos/tomi.png">
+                    <p class="link"><a href="team.html">Team</a></p>
+                </div>
+                <div class="nav-holder">
+                    <img class="button" src="Photos/mimi.png">
+                    <p class="link"><a href="change.html">Changelog</a></p>
+                </div>
+                <div class="nav-holder">
+                    <img class="button" src="Photos/arcana.png">
+                    <p class="link"><a href="commu.html">Community</a></p>
+                </div>
+                <div class="nav-holder">
+                    <img class="button" src="Photos/sura.png">
+                    <p class="link"><a href="link.html">Other Links</a></p>
+                </div>
+                <img class="title-card" src="Photos/title_card.png">
+            </div>
+            <div class="red">
+                <img class="imgcard border-yellow" src="Photos/action.jpg">
+                <div>
+                    <h1 class="yellow-txt">Fast Paced Action</h1>
+                    <p class="hometxt">Wizard of Legend is a fast paced dungeon crawler with rogue-like elements that emphasizes dynamic magical combat. Quick movement and even quicker use of spells will allow you to chain spells together to unleash devastating combinations against your enemies!</p>
+                </div>
+            </div>
+            <br>
+            <div class="green">
+                <img class="imgcard border-brown two" src="Photos/spellbook.jpg">
+                <div class="one fitting">
+                <h1 class="brown-txt">Over 100 Spells</h1>
+                <p class="hometxt">Unlock over a hundred unique spells and discover powerful spell combinations and synergies! A wide variety of elemental spells allows you to create a hand best suited to your playstyle. Dive head first into the fray or stand back and let your minions do the work for you, the choice is yours!</p>
+                </div>
+            </div>
+            <br>
+            <div class="blue">
+                <img class="imgcard border-gold" src="Photos/coop.jpg">
+                <div>
+                <h1 class="gold-txt">Local CO-OP</h1>
+                <p class="hometxt">Grab a friend and tackle the Chaos Trials together in Wizard of Legend's couch co-op mode! Jump head first into the action in an all out offensive or strategically equip your wizards with spells and items that compliment each other's playstyle. The battle is not over when your friend is downed in battle. Defeat multiple enemies in a display of skill to grant your partner a chance to rejoin the battle!</p>
+                </div>
+            </div>
+            <form class="buy" action="https://store.steampowered.com/app/445980/Wizard_of_Legend/">
+                <input type="submit" value="Buy Now">
+            </form>
+        </div>
+        <script>
+            gsap.from(".move1", {duration: 0.8, y: -100, ease: "bounce.out"});
+            gsap.from(".move2", {duration: 1.6, x: -100, rotation: -180, scale: 0.2, delay: 0.8});
+            gsap.from(".move3", {duration: 2.4, opacity: 0, scale: 0.2, delay: 2});
+        </script>
+    </body>
+</html>

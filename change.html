@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="content">
+            <div class="logo">
+                <img class="move1" src="../logo-3.png">
+                <img class="move2" src="../logo-2.png">
+                <img class="move3" src="../logo-1.png">
+            </div>
+            <img class="top-img" src="Photos/title_img.jpg">
+            <div class="nav sticky">
+                <div class="nav-holder">
+                    <img class="button" src="Photos/hero.png">
+                    <p class="link"><a href="index.html">Home</a></p>
+                </div>
+                <div class="nav-holder">
+                    <img class="button" src="Photos/tomi.png">
+                    <p class="link"><a href="team.html">Team</a></p>
+                </div>
+                <div class="nav-holder">
+                    <img class="button" src="Photos/mimi.png">
+                    <p class="link"><a href="change.html">Changelog</a></p>
+                </div>
+                <div class="nav-holder">
+                    <img class="button" src="Photos/arcana.png">
+                    <p class="link"><a href="commu.html">Community</a></p>
+                </div>
+                <div class="nav-holder">
+                    <img class="button" src="Photos/sura.png">
+                    <p class="link"><a href="link.html">Other Links</a></p>
+                </div>
+                <img class="title-card" src="Photos/title_card.png">
+            </div>
+            <div class="changetxt">
+                <h1>2nd Anniversary Update (v1.22) <br>Change Log (2020-05-15)</h1>
+                <br>
+                <p>Hey everyone, today marks the 2nd year anniversary of Wizard of Legend's release! To celebrate, we have a smaller update that adds various relics, arcana, and a highly requested NPC! Please let us know if you run into any issues or bugs with the new update. Thank you everyone for all the support, we could not have done this without all of you! Note: The console patches are pending approval and will go live ASAP!</p>
+                <br>
+                <h2>----------- New Features -----------</h2>
+                <ul>
+                    <li>New NPC added at home that will allow you to save up to 3 custom loadouts</li>
+                    <li>Run history added at home which records the best runs for the Chaos Trials, Boss Rush, and Endless Mode (walk up to and face new shelf on right hallway)</li>
+                    <li>Party Chests added which spawn at a low chance and include predefined sets of relics and arcana</li>
+                    <li>Added relic and arcana vendors before the final boss along with a short run up encounter</li>
+                    <li>Following relics received headgear visuals: Chaos Visor, Shark Mask, Elven Ears, Jade's Tiara, Berserk's Helm, Gilded Helm, Graduation Cap</li>
+                    <li>14 new standard arcana, including 4 new standard chaos arcana</li>
+                    <li>12 new cursed relics</li>
+                    <li>2 new combine relics</li>
+                </ul>
+
+                <h2>----------- Miscellaneous -----------</h2>
+                <ul>
+                    <li>Enemies in the Chaos PvP Arena now level up with time</li>
+                    <li>Disabled the ability to evade while hurt</li>
+                    <li>Lowered Cyclops laser duration when player is hit</li>
+                    <li>Summoner enemies now have a longer cooldown on their minion revive ability</li>
+                    <li>Added an area of effect indicator to the Thunder Zoner enemies</li>
+                </ul>
+                <h2>----------- Quality of Life -----------</h2>
+                <ul>
+                    <li>Boss Rush mode now also unlocks Chaos Arcana</li>
+                    <li>Loadout NPC added to Versus mode</li>
+                    <li>All stores now offer 1 more item in the line up. Health Potions in the relic store moved to the side to accommodate for the change</li>
+                    <li>Savile now takes less HP when upgrading your outfit during runs</li>
+                    <li>Chaos Arcana have a chance of appearing in the arcana store starting from loop 3 and above</li>
+                    <li>Various price adjustments</li>
+                </ul>
+                <h2>----------- Relic Adjustments -----------</h2>
+                <ul>
+                    <li>Bewitching Glue now lowers player's movespeed and increases their stun duration when hurt</li>
+                    <li>Ebon Wolf's Cloak now lowers your damage for anything other than fire and lightning arcana instead of increasing your damage received.</li>
+                    <li>Megalodon Tooth now adds a chance to not expend your signature charge when used</li>
+                    <li>Shark Mask now causes signature arcana to take longer to charge but always results in a critical hit</li>
+                    <li>Armor of Resolve now grants a bit more armor when activated</li>
+                    <li>Whimsical Explodium's chance to activate increased greatly and the radius of effect slightly lowered</li>
+                    <li>Special Snowflake's chance to activate increased greatly</li>
+                    <li>Elven Ear's chance to resist status effects increased</li>
+                    <li>Greased Boots now enhances your dash arcana and lowers its cooldown</li>
+                    <li>Bach's Escape Key changed to resist death. Each subsequent chance is reduced on successful attempts</li>
+                    <li>Hardcover Textbook increases HP of summoned minions instead of adding an extra minion</li>
+                    <li>Soccer Cleats adds slightly more damage to movement arcana</li>
+                    <li>Jumper Cables now significantly reduces more cooldowns on movement arcana</li>
+                    <li>Yuna's Storybook now significantly increases the duration of minion summon time</li>
+                    <li>Adorable Mimic now counts itself in calculations</li>
+                </ul>
+                <h2>----------- Arcana Adjustments -----------</h2>
+                <ul>
+                    <li>Gust volley shot speed increased</li>
+                    <li>Severing Slash now works properly with Flak Gauntlets</li>
+                    <li>Earth Stomp Agent now has less delay during their jump</li>
+                    <li>Ion Spike's enhanced version now spawns a trio of extra orbs</li>
+                    <li>Vortex Dash now places a trap where you land that pushes enemies to where your dash originated</li>
+                </ul>
+                <h2>----------- Bugfixes -----------</h2>
+                <ul>
+                    <li>Fixed issue where minimap could disappear in certain situations</li>
+                    <li>Fixed issue in co-op where one player could affect the other player's equipment or outfit menu</li>
+                    <li>Fixed edge case with Abhorrent Deck that occurred when no arcana had been unlocked</li>
+                </ul>
+                <br>
+                <hr>
+                <h1>Thundering Keep Bugfix Patch (v1.211) Change Log (2020-01-21)</h1>
+                <br>
+                <p>Thank you everyone for the bug reports, it has been a great help in quickly identifying issues! These bugfixes and changes are now live on the Steam version and will be rolled out to GOG, Game Pass, and console versions ASAP.</p>
+                <ul>
+                    <li>Resolved issue where players could get stuck when using hold projectiles like Bouncing Surge</li>
+                    <li>Absolute Finale no longer bugs enemies when it hits a wall and an enemy at the same time</li>
+                    <li>Fixed bug which allowed looping signature version of Fading Petal</li>
+                    <li>Fixed bug when using Chaos Reaper with Evening Gloves and Crono Glove</li>
+                    <li>Fixed issue with Venture cloak not unlocking properly when defeating certain bosses</li>
+                    <li>Added missing SFX for various new enemies</li>
+                    <li>Fixed bug caused by the Grand Summoner in higher difficulties</li>
+                    <li>Fixed mouse hover issues in the options menu</li>
+                    <li>Fixed issue with Zoning enemies not properly freezing</li>
+                    <li>Mentis Imperium no longer applies charm on the player when reflected</li>
+                    <li>Added missing price for the Water Cushion relic</li>
+                    <li>Fixed edge case where victory screen could improperly show up in co-op</li>
+                    <li>Fixed various arcana descriptions including Ice Seeker Enhanced text</li>
+                    <li>Unlock notices (!) are now properly cleared when game data is cleared</li>
+                    <li>Fixed alignment for some new paintings</li>
+                    <li>Adjusted camera lock behavior to be less restrictive</li>
+                    <li>Other various minor bugfixes</li>
+                </ul>
+                <br>
+                <hr>
+                <h1>Thundering Keep Hotfix Patch (v1.21) Change Log (2020-01-16)</h1>
+                <br>
+                <p>These are a few minor bugfixes that will be addressed on the console versions ASAP.</p>
+                <ul>
+                    <li>Fixed issue with locked camera in boss rush mode</li>
+                    <li>Added Thundering Keep, Freiya, Zeal, and Atlas backgrounds to titlescreen</li>
+                </ul>
+                <br>
+                <hr>
+                <h1>Thundering Keep Update (v1.2) Change Log (2020-01-16)</h1>
+                <br>
+                <p>Hey everyone! We're happy to present the free Thundering Keep update that should now be live on all platforms (PC/Mac/Linux, Switch, PS4, and Xbox)! We hope you enjoy the new content please let us know if you run into any issues via Twitter or Discord!</p>
+                <p>Thank you all for the continued support that made this update possible!</p>
+
+                <h2>----------- Quick Overview -----------</h2>
+                <ul>
+                    <li>New Lightning boss, stage, and enemies</li>
+                    <li>Over 20 new arcana</li>
+                    <li>Over 30 new relics</li>
+                    <li>New signatures, outfits, and more!</li>
+                </ul>
+
+                <h2>----------- Change Log -----------</h2>
+
+                <h2>Arcana</h2>
+                <ul>
+                    <li>24 new arcana</li>
+                    <li>6 new basic arcana</li>
+                    <li>6 new dash arcana</li>
+                    <li>12 new standard arcana</li>
+                    <li>12 new signatures</li>
+                    <li>Minor adjustments to existing arcana (see below)</li>
+                </ul>
+
+                <h2>Relics</h2>
+                <ul>
+                    <li>39 new relics</li>
+                    <li>Minor adjustments to existing relics (see below)</li>
+                </ul>
+
+                <h2>Quality of Life</h2>
+                <ul>
+                    <li>Outfit info now displayed in the equipment menu along with their stats</li>
+                    <li>Boss Rush cost changed from 25 to 10 gems</li>
+                    <li>Banker now takes your token and gives you a flat 20 gems in addition to the gold exchange</li>
+                    <li>Defense stat removed and replaced with appropriate stats such as armor or hp as it was causing too much confusion</li>
+                    <li>Versus Mode's Arena of Fury (Fire) now makes players do double damage instead of enhancing all spawned arcana</li>
+                </ul>
+                <h2>Bug Fixes</h2>
+                <ul>
+                    <li>Fixed an error where Freiya might bug out when her lances are destroyed before being thrown</li>
+                </ul>
+                <h2>Minor Arcana Adjustments</h2>
+                <ul>
+                    <li>Heroic Leap changed to always activate regardless of if an enemy was grabbed and cancel delay reduced</li>
+                    <li>Flame Strike changed to a charged basic skill that changes properties when fully charged</li>
+                    <li>All wards and seekers arcana are now classified as summon arcana</li>
+                    <li>Mentis Imperium changed to shoot an arrow that buffs affected enemy and mind controls them until they are defeated</li>
+                    <li>Frozen Bait now freezes enemies in the area when it lands</li>
+                    <li>Frost Feint now has an extra charge with lowered damage</li>
+                    <li>Phantom Brigade signature gain reduced</li>
+                    <li>Ignition Dash cooldown reduced</li>
+                    <li>Voltaic Needle no longer throws you off ledges into pits</li>
+                    <li>Raging Inferno cooldown reduced</li>
+                    <li>Minion arcana spawn count normalized to 2 and starting hp normalized</li>
+                    <li>Shattering Strike stun amount increased</li>
+                    <li>All buff skills standardized, cooldowns now start at end of skill but all cooldowns reduced to compensate</li>
+                    <li>Wave Front Dash, Frost Wing cooldown slightly increased</li>
+                    <li>Heroic Blaze signature damage slightly lowered</li>
+                    <li>Bouncing Bubble initial charge changed from 5 to 4</li>
+                    <li>Rock-solid Tomahawk stun amount increased</li>
+                </ul>
+                <h2>Minor Relic Adjustments</h2>
+                <ul>
+                    <li>Chaos Visor moved to Offense and now also added projectile crit chance</li>
+                    <li>Chaos Scanner moved to Offense and now also slightly increases damage</li>
+                    <li>Evening Gloves changed to auto combo when holding the button down and gives extra signature charge when using basic attacks</li>
+                    <li>Raspberry Cookie Box effect increased from 30% to 50%</li>
+                    <li>Halved the damage down effects of Ebon Wolf's Cloak</li>
+                    <li>Pop-up Primer no longer has a negative max HP penalty on summoned minions</li>
+                    <li>Mystic Monopole changed to decrease knockback instead of increase knockback</li>
+                    <li>Berserker's Axe damage increase changed from 20% to 15%</li>
+                    <li>Singing Bowl crit effect no longer activates when you use a basic</li>
+                    <li>Hyperbolic Train signature gain changed from 30% to 25%</li>
+                    <li>Thesis on Defense now increases armor instead of defense</li>
+                    <li>Chaotic Pendulum's enemy CD reduction changed from 75% to 25%</li>
+                    <li>Jumper Cables effect changed to reduced cooldown on all movement arcana</li>
+                    <li>Elven Ears effect changed to lower the chance of being afflicted by all status effects</li>
+                    <li>Dice of the Nemesis changed to add a flat 300 damage to what you would have done instead of forcing 300 crit to accomodate for high damage builds</li>
+                    <li>Cassim's Airy Cloak cooldown reduced and active duration lowered</li>
+                    <li>Sano's Headband moved to Defense</li>
+                    <li>Demi's Teapot moved to Misc</li>
+                </ul>
+                <br>
+                <hr>
+                <h1>Switch Lite Compatibility Patch (v1.124) Change Log (2019-10-15)</h1>
+                <ul>
+                    <li>Small patch to add Switch Lite compatibility</li>
+                </ul>
+                <br>
+                <hr>
+                <h1>Dev Commentary Update (v1.123) Change Log (2019-07-23)</h1>
+                <p>We hope everyone is having a great summer! We're back with a small update that adds developer commentary and titlescreen artwork selection! We had a lot of fun adding commentary to the game and we hope that you enjoy the small behind the scenes look!</p>
+                <p>We've also included various fixes for a few bugs that have been reported since the last update. We'll keep an eye out for any issues that crop up with this update and get the patch onto consoles ASAP.</p>
+                <h2>----------- New Features -----------</h2>
+                <ul>
+                    <li>Developer commentary!</li>
+                    <li>Choose "Developer" as language option to enable</li>
+                    <li>Recommended to start in the museum by talking to Veres</li>
+                    <li>English only</li>
+                    <li>Titlescreen artwork selection!</li>
+                    <li>Press left or right at titlescreen to choose.</li>
+                    <li>Must at least enter main menu to save selection.</li>
+                </ul>
+                <h2>----------- Quality of Life -----------</h2>
+                <ul>
+                    <li>Nocturne now always shows arcana selection and gives you a fully random set. Token still prevents him from taking an arcana.</li>
+                    <li>Exclamation emote added on Raffle Ticket to indicate free purchase.</li>
+                    <li>Mentis Imperium now negates projectiles.</li>
+                    <li>Conquerer's relics can now appear mid-run in stores.</li>
+                </ul>
+                <h2>----------- Bug Fixes -----------</h2>
+                <ul>
+                    <li>Fixed issue that could cause frozen bosses in Boss Rush mode.</li>
+                    <li>Fixed issue where Aegis Charge would disable some of the player's collision boxes.</li>
+                    <li>Casting circles from Zeal's skills should no longer bug out.</li>
+                    <li>Fixed some code that could cause misplaced objects in stages.</li>
+                    <li>Cartographer's Quill now properly updates damage on pick up.</li>
+                    <li>Cobalt Firestone damage should now scale properly without having to reqeuip it.</li>
+                    <li>Fixed Dagger of Midas bug that occurred when resetting the game with it in the inventory.</li>
+                    <li>Fixed buggy mouse hover and click behavior in options menu</li>
+                </ul>
+                <br>
+                <hr>
+                <h1>Wizard of Legend (v1.122) Change Log (2019-06-06)</h1>
+                <ul>
+                    <li>Boss Training Dummy added to Lanova Plaza</li>
+                    <li>Bugfix for C-99 Piggy Bank</li>
+                    <li>Bugfix for Albert's Formula</li>
+                </ul>
+                <br>
+                <hr>
+                <h1>Boss Rush Update (v1.12 + v1.121) Change Log (2019-05-15)</h1>
+                <h2>----------- New in This Update -----------</h2>
+                <ul>
+                    <li>Boss Rush mode now available via an NPC in Lanova Plaza (Requires completion of Chaos Trials)</li>
+                    <li>Hard mode is now available via an NPC in Lanova Plaza and the Insignia of Legend relic no longer activates hard mode</li>
+                    <li>21 new relics added</li>
+                </ul>
+                <h2>----------- Quality of Life Changes -----------</h2>
+                <ul>
+                    <li>Relics now show number values when applicable in the equip menu</li>
+                    <li>Insignia of Legend now makes Chaos arcana available for purchase during the Chaos Trials</li>
+                    <li>End of run summary screen updated to show the full player build</li>
+                    <li>The last used cursed relic from Nox in Lanova Plaza is now guaranteed to be in stock the next visit</li>
+                    <li>Treasure chests now show an indicator icon in the minimap</li>
+                    <li>Doctor Song and Nocturne now prefer to take standard arcana before enhanced arcana when you request their services</li>
+                    <li>Increased chance to find complimentary relic in shops when holding a combination relic during the Chaos Trials</li>
+                    <li>Conga Drum Set cursed relic updated to make all players immune to exploding barrels</li>
+                    <li>Flashy Boots cursed relic updated to allow dash arcana to activate up to three times per charge</li>
+                    <li>Aegis Charge arcana has been reworked to be more effective overall</li>
+                    <li>Stone Shot (Basic) arcana activation speed increased</li>
+                    <li>Wind zone enemy visuals have been updated to look more like an enemy rather than a hazard</li>
+                    <li>Various minor bug fixes</li>
+                </ul>
+                <h2>----------- v1.21 Change Log -----------</h2>\
+                <ul>
+                    <li>Fixed issue with relics not properly being cleared from inventory. This fixes the following reported issues:</li>
+                    <ul>
+                        <li>Softlock with Pazu's Favorite Hat</li>
+                        <li>Adorable Mimic not properly clearing inventory on pickup</li>
+                        <li>Randomized runs that improperly show extra relics that should've been removed</li>
+                        <li>Critical Placebo effects not resetting on death</li>
+                        <li>Ressurect relics were all probably a bit wonky and now should be fixed</li>
+                    </ul>
+                    <li>Nox's cursed relics in Lanova Plaza should now properly reset if you visit the museum</li>
+                    <li>Fixed full health chime with Fall outfit</li>
+                    <li>Fixed relic icons incorrectly showing up as activated in the UI</li>
+                    <li>Fixed issue with Taffy not opening a red portal when defeated offscreen</li>
+                    <li>Health is now restored at beginning of Boss Rush mode so that any removed relics don't affect the run</li>
+                    <li>Fixed issue with Covert Ops Mask forcing zero crit chance</li>
+                    <li>Added a "+" before stage count to indicate hard mode in the run summary</li>
+                </ul>
+                <br>
+                <hr>
+                <h1>Sky Palace Update (v1.1) Change Log (2019-03-20)</h1>
+                <p>Note: This is a free update that is now live on all platforms (PC/Mac/Linux, Switch, PS4, and Xbox). We tried our best to document all the changes, but this is a fairly large update and we may have missed a few things! If you run into any issues, please drop us a line via email, Twitter, or Discord!</p>
+                <h2>----------- Quick Overview -----------</h2>
+                <ul>
+                    <li>New Sky Palace stage</li>
+                    <li>Wind Sovereign Shuu joins the Magic Council</li>
+                    <li>Over 20 new arcana and 20 new signatures</li>
+                    <li>Endless Mode</li>
+                    <li>Over 35 new relics</li>
+                    <li>3 new outfits</li>
+                    <li>New enemies</li>
+                    <li> And more!</li>
+                </ul>
+                <h2>----------- Change Log -----------</h2>
+                <h2>UI</h2>
+                <ul>
+                    <li>Description of arcana and relics in shops are now displayed in a pop up when you walk up to them</li>
+                    <li>Training dummies now display total damage done when they reset to original position</li>
+                    <li>Added UI notice to show when relics are lost</li>
+                </ul>
+                <h2>Arcana</h2>
+                <ul>
+                    <li>5 new basic arcana</li>
+                    <li>5 new dash arcana</li>
+                    <li>12 new standard arcana</li>
+                    <li>22 new signatures</li>
+                    <li>Lowered cost of signatures in Lanova Plaza to 50</li>
+                    <li>Minor adjustments to existing arcana (see below)</li>
+                </ul>
+                <h2>Relics</h2>
+                <ul>
+                    <li>28 new relics</li>
+                    <li>9 new run modifier cursed relics</li>
+                    <li>Minor adjustments to existing relics (see below)</li>
+                </ul>
+                <h2>Outfits</h2>
+                <ul>
+                    <li>3 new outfits</li>
+                </ul>
+                <h2>Enemies</h2>
+                <ul>
+                    <li>Wind Sovereign Shuu added to the Magic Council</li>
+                    <li>Elemental variations of lancers</li>
+                    <li>Zoner enemies</li>
+                    <li>Macho Ghoul</li>
+                    <li>Crush Colossus mini boss</li>
+                    <li>Laser Cyclops</li>
+                    <li>Blob Barrager</li>
+                    <li>Roller Blob</li>
+                    <li>Air elemental versions of rogue, mage, knight, archer, and lancer</li>
+                    <li>Mimics</li>
+                    <li>Super Archer now does extra strafe attacks based on difficulty level</li>
+                </ul>
+                <h2>NPCs</h2>
+                <ul>
+                    <li>New NPC in the Chaos Trials that helps gather gems</li>
+                    <li>Nox now sells special cursed relics in Lanova Plaza (must clear Chaos Trials once)</li>
+                    <li>Mysterious Timekeeper NPC that enables endless mode (must clear Chaos Trials once)</li>
+                </ul>
+                <h2>Stages</h2>
+                <ul>
+                    <li>Sky Palace stage</li>
+                    <li>All stores and NPCs in the Chaos Trials now spawn a portal to the start of the stage until the mini boss room is discovered</li>
+                    <li>90+ new room variations</li>
+                    <li>Minor new variations to stage props</li>
+                </ul>
+                <h2>Versus</h2>
+                <ul>
+                    <li>2 new arenas</li>
+                </ul>
+                <h2>Minor Arcana Adjustments</h2>
+                <ul>
+                    <li>Absolute Finale cooldown reduced</li>
+                    <li>Searing Rush cooldown reduced</li>
+                    <li>Spike Track cooldown reduced</li>
+                    <li>Ion Spike cooldown reduced</li>
+                    <li>Frost Feint cooldown reduced</li>
+                    <li>Voltaic Needle attack box adjusted to make it easier to hit</li>
+                    <li>Exploding Fireball's signature version now burns on the final explosion</li>
+                    <li>Mentis Imperium damage increased, cooldown lowered, and knockback increased</li>
+                    <li>Toxic Bolas damage increased, poison level increased, root duration increased</li>
+                    <li>Earthquake Axe now executes faster and causes less knockback</li>
+                    <li>Embracing Vines now spawns a second row even when not empowered. Cooldown increased and root duration lowered</li>
+                </ul>
+                <h2>Minor Relic Adjustments</h2>
+                <ul>
+                    <li>Friendship Bracelet now works even when only 1 player equips it (but with lowered effectiveness). It now also prevents PvP events after boss fights</li>
+                    <li>Broken Plague Flask effects doubled and moved to Nox's store in Lanova Plaza</li>
+                    <li>Large Red Button lowered health penalty and moved to Nox's store in Lanova Plaza</li>
+                    <li>Abhorrent Cologne effects increased and moved to Nox's store in Lanova Plaza</li>
+                </ul>
+                <p class="center">Wizard of Legend ©2019 Contingent99 LLC. All Rights Reserved. The Contingent99 logo, Wizard of Legend, and the Wizard of Legend logo are trademarks of Contingent99 LLC.</p>
+            </div>
+            <form class="buy" action="https://store.steampowered.com/app/445980/Wizard_of_Legend/">
+                <input type="submit" value="Buy Now">
+            </form>
+        </div>
+    </body>
+</html>
